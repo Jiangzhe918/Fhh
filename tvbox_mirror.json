@@ -1,0 +1,557 @@
+{
+  "wallpaper": "https://picsum.photos/1920/1080/?blur=2",
+  "lives": [
+    {
+      "name": "🏠 仓库自愈聚合直播 (央视/卫视/高清主线)",
+      "type": 0,
+      "url": "https://gh-proxy.com/https://raw.githubusercontent.com/<你的用户名>/<仓库名>/main/live_tv.txt",
+      "playerType": 1,
+      "ua": "okhttp/3.15",
+      "epg": "https://epg.112114.xyz/?ch={name}&date={date}",
+      "logo": "https://epg.112114.xyz/logo/{name}.png"
+    },
+    {
+      "name": "📺 范明明 IPv6/v4 高清直播",
+      "type": 0,
+      "url": "https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/m3u/ipv6.m3u",
+      "playerType": 1,
+      "ua": "okhttp/3.15",
+      "epg": "https://epg.112114.xyz/?ch={name}&date={date}",
+      "logo": "https://epg.112114.xyz/logo/{name}.png"
+    },
+    {
+      "name": "📡 vbskycn 央卫全聚合直播",
+      "type": 0,
+      "url": "https://gh-proxy.com/https://raw.githubusercontent.com/vbskycn/iptv/master/tv/iptv4.txt",
+      "playerType": 1,
+      "ua": "okhttp/3.15",
+      "epg": "https://epg.112114.xyz/?ch={name}&date={date}",
+      "logo": "https://epg.112114.xyz/logo/{name}.png"
+    },
+    {
+      "name": "🌐 vbskycn IPv6 专线直播",
+      "type": 0,
+      "url": "https://gh-proxy.com/https://raw.githubusercontent.com/vbskycn/iptv/master/tv/iptv6.txt",
+      "playerType": 1,
+      "ua": "okhttp/3.15",
+      "epg": "https://epg.112114.xyz/?ch={name}&date={date}",
+      "logo": "https://epg.112114.xyz/logo/{name}.png"
+    },
+    {
+      "name": "⚡ Guovin 自动测速电视直播",
+      "type": 0,
+      "url": "https://gh-proxy.com/https://raw.githubusercontent.com/Guovin/iptv-api/gd/output/result.txt",
+      "playerType": 1,
+      "ua": "okhttp/3.15",
+      "epg": "https://epg.112114.xyz/?ch={name}&date={date}",
+      "logo": "https://epg.112114.xyz/logo/{name}.png"
+    },
+    {
+      "name": "🎬 YanG 体育与综合聚合直播",
+      "type": 0,
+      "url": "https://gh-proxy.com/https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+      "playerType": 1,
+      "ua": "okhttp/3.15",
+      "epg": "https://epg.112114.xyz/?ch={name}&date={date}",
+      "logo": "https://epg.112114.xyz/logo/{name}.png"
+    },
+    {
+      "name": "🛰️ Joevess 央视卫视精选源",
+      "type": 0,
+      "url": "https://gh-proxy.com/https://raw.githubusercontent.com/joevess/IPTV/main/home.m3u8",
+      "playerType": 1,
+      "ua": "okhttp/3.15",
+      "epg": "https://epg.112114.xyz/?ch={name}&date={date}",
+      "logo": "https://epg.112114.xyz/logo/{name}.png"
+    }
+  ],
+  "sites": [
+    {
+      "key": "douban_recommend",
+      "name": "🌟 豆瓣推荐 (热门榜单/评分优选/本地代理去广)",
+      "type": 3,
+      "api": "https://gh-proxy.com/https://raw.githubusercontent.com/<你的用户名>/<仓库名>/main/py_douban.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "{\"remove_ad\":true,\"use_local_proxy\":true}"
+    },
+    {
+      "key": "py_duanju_pro",
+      "name": "🎭 短剧聚合专区 (红果/河马/番茄同步/9大爽剧题材)",
+      "type": 3,
+      "api": "https://gh-proxy.com/https://raw.githubusercontent.com/<你的用户名>/<仓库名>/main/py_cms_spider.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "{\"default_site\":\"lzi\",\"mode\":\"duanju\",\"remove_ad\":true,\"aggregate_detail\":true,\"use_local_proxy\":true}"
+    },
+    {
+      "key": "py_cms_pro",
+      "name": "🐍 全聚合采集引擎Pro (自动汇集15站线路/最高码率去广)",
+      "type": 3,
+      "api": "https://gh-proxy.com/https://raw.githubusercontent.com/<你的用户名>/<仓库名>/main/py_cms_spider.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "{\"default_site\":\"lzi\",\"mode\":\"all\",\"remove_ad\":true,\"aggregate_detail\":true,\"use_local_proxy\":true}"
+    },
+    {
+      "key": "py_ffzy_pro",
+      "name": "🐍 非凡主站聚合 (豆瓣高分/多站容灾)",
+      "type": 3,
+      "api": "https://gh-proxy.com/https://raw.githubusercontent.com/<你的用户名>/<仓库名>/main/py_cms_spider.py",
+      "searchable": 0,
+      "quickSearch": 0,
+      "filterable": 1,
+      "ext": "{\"default_site\":\"ffzy\",\"mode\":\"all\",\"remove_ad\":true,\"aggregate_detail\":true,\"use_local_proxy\":true}"
+    },
+    {
+      "key": "lzi_cms",
+      "name": "🎬 量子资源 (综合/短剧/秒播)",
+      "type": 1,
+      "api": "http://cj.lziapi.com/api.php/provide/vod/",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
+      "key": "ffzy_cms",
+      "name": "🎞️ 非凡资源 (老牌综合/豆瓣高分)",
+      "type": 1,
+      "api": "http://cj.ffzyapi.com/api.php/provide/vod/",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
+      "key": "suoni_cms",
+      "name": "🎧 索尼资源 (短剧王牌/综合/动漫)",
+      "type": 1,
+      "api": "https://suoniapi.com/api.php/provide/vod/",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
+      "key": "jisu_cms",
+      "name": "🚀 极速资源 (动漫/短剧强站)",
+      "type": 1,
+      "api": "https://jszyapi.com/api.php/provide/vod/",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
+      "key": "bfzy_cms",
+      "name": "🌪️ 暴风资源 (爽文短剧/4K综合)",
+      "type": 1,
+      "api": "https://bfzyapi.com/api.php/provide/vod/",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
+      "key": "ikun_cms",
+      "name": "🏀 iKun资源 (短剧热播/极速切片)",
+      "type": 1,
+      "api": "https://ikunzyapi.com/api.php/provide/vod/",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
+      "key": "wolong_cms",
+      "name": "🐉 卧龙资源 (老牌全量/短剧同步)",
+      "type": 1,
+      "api": "https://collect.wolongzyw.com/api.php/provide/vod/",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
+      "key": "guangsu_cms",
+      "name": "⚡ 光速资源 (高速CDN/体育赛事)",
+      "type": 1,
+      "api": "https://api.guangsuapi.com/api.php/provide/vod/",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
+      "key": "tiankong_cms",
+      "name": "☁️ 天空资源 (高画质/秒播切片)",
+      "type": 1,
+      "api": "http://m3u8.tiankongapi.com/api.php/provide/vod/",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
+      "key": "hongniu_cms",
+      "name": "🐂 红牛资源 (极速同步/体育录像)",
+      "type": 1,
+      "api": "https://hongniuzy2.com/api.php/provide/vod/",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
+      "key": "wujin_cms",
+      "name": "♾️ 无尽资源 (综合/动漫/短剧)",
+      "type": 1,
+      "api": "https://api.wujinapi.com/api.php/provide/vod/",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
+      "key": "haohua_cms",
+      "name": "💎 豪华资源 (多线容灾/短剧高更)",
+      "type": 1,
+      "api": "https://hhzyapi.com/api.php/provide/vod/",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
+      "key": "baidu_cms",
+      "name": "🐾 百度资源 (多线容灾/备用源)",
+      "type": 1,
+      "api": "https://api.apibdzy.com/api.php/provide/vod/",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
+      "key": "360_cms",
+      "name": "🛡️ 360资源 (短剧细分/备用源)",
+      "type": 1,
+      "api": "https://360zy.com/api.php/provide/vod/",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
+      "key": "haiwaikan_cms",
+      "name": "🌍 海外看资源 (海外冷门/无水印)",
+      "type": 1,
+      "api": "https://haiwaikan.com/api.php/provide/vod/",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    }
+  ],
+  "parses": [
+    {
+      "name": "Json并发",
+      "type": 2,
+      "url": "Parallel"
+    },
+    {
+      "name": "Json轮询",
+      "type": 2,
+      "url": "Sequence"
+    },
+    {
+      "name": "Web聚合",
+      "type": 3,
+      "url": "Web"
+    }
+  ],
+  "flags": [
+    "lzi",
+    "lzm3u8",
+    "ffzy",
+    "ffm3u8",
+    "suoni",
+    "snzy",
+    "snm3u8",
+    "jszy",
+    "jsm3u8",
+    "bfzy",
+    "bfzym3u8",
+    "ikun",
+    "ikm3u8",
+    "wolong",
+    "wlm3u8",
+    "guangsu",
+    "gsm3u8",
+    "tiankong",
+    "tkm3u8",
+    "hnzy",
+    "hnm3u8",
+    "wujin",
+    "wjm3u8",
+    "hhzy",
+    "hhm3u8",
+    "bdzy",
+    "bdxm3u8",
+    "360zy",
+    "360m3u8",
+    "haiwaikan",
+    "hwkm3u8",
+    "m3u8"
+  ],
+  "doh": [
+    {
+      "name": "阿里DoH",
+      "url": "https://dns.alidns.com/dns-query",
+      "ips": [
+        "223.5.5.5",
+        "223.6.6.6"
+      ]
+    },
+    {
+      "name": "腾讯DoH",
+      "url": "https://doh.pub/dns-query",
+      "ips": [
+        "119.29.29.29",
+        "1.12.12.12"
+      ]
+    },
+    {
+      "name": "Cloudflare",
+      "url": "https://cloudflare-dns.com/dns-query",
+      "ips": [
+        "1.1.1.1",
+        "1.0.0.1"
+      ]
+    }
+  ],
+  "rules": [
+    {
+      "name": "量子去广告",
+      "hosts": [
+        "vip.lz",
+        "hd.lz",
+        ".cdnlz"
+      ],
+      "regex": [
+        "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:6.433333,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+        "#EXTINF.*?\\s+.*?1o.*?\\.ts\\s+"
+      ]
+    },
+    {
+      "name": "非凡去广告",
+      "hosts": [
+        "vip.ffzy",
+        "hd.ffzy",
+        ".ffzy"
+      ],
+      "regex": [
+        "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:6.666667,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+        "#EXTINF.*?\\s+.*?1o.*?\\.ts\\s+"
+      ]
+    },
+    {
+      "name": "索尼去广告",
+      "hosts": [
+        "suonizy",
+        "v.cdnlz"
+      ],
+      "regex": [
+        "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:15.1666,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+        "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:15.2666,[\\s\\S]*?#EXT-X-DISCONTINUITY"
+      ]
+    },
+    {
+      "name": "暴风/iKun/卧龙/极速/豪华/无尽/360通用M3U8去广告",
+      "hosts": [
+        "bfzy",
+        "ikun",
+        "wolong",
+        "jszy",
+        "suoni",
+        "wujin",
+        "hhzy",
+        "360zy",
+        "haiwaikan",
+        "guangsu",
+        "tiankong",
+        "hongniu",
+        "apibdzy"
+      ],
+      "regex": [
+        "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:(?:6\\.433333|6\\.666667|15\\.1666|15\\.2666|10\\.000000),[\\s\\S]*?#EXT-X-DISCONTINUITY",
+        "#EXTINF.*?\\s+.*?adjump.*?\\.ts\\s+"
+      ]
+    }
+  ],
+  "ijk": [
+    {
+      "group": "软解码",
+      "options": [
+        {
+          "category": 4,
+          "name": "opensles",
+          "value": "0"
+        },
+        {
+          "category": 4,
+          "name": "overlay-format",
+          "value": "842225234"
+        },
+        {
+          "category": 4,
+          "name": "framedrop",
+          "value": "1"
+        },
+        {
+          "category": 4,
+          "name": "soundtouch",
+          "value": "1"
+        },
+        {
+          "category": 4,
+          "name": "start-on-prepared",
+          "value": "1"
+        },
+        {
+          "category": 1,
+          "name": "http-detect-range-support",
+          "value": "0"
+        },
+        {
+          "category": 1,
+          "name": "fflags",
+          "value": "fastseek"
+        },
+        {
+          "category": 2,
+          "name": "skip_loop_filter",
+          "value": "48"
+        },
+        {
+          "category": 4,
+          "name": "reconnect",
+          "value": "1"
+        },
+        {
+          "category": 4,
+          "name": "enable-accurate-seek",
+          "value": "0"
+        },
+        {
+          "category": 4,
+          "name": "mediacodec",
+          "value": "0"
+        },
+        {
+          "category": 4,
+          "name": "mediacodec-auto-rotate",
+          "value": "0"
+        },
+        {
+          "category": 4,
+          "name": "mediacodec-handle-resolution-change",
+          "value": "0"
+        },
+        {
+          "category": 4,
+          "name": "mediacodec-hevc",
+          "value": "0"
+        },
+        {
+          "category": 1,
+          "name": "dns_cache_timeout",
+          "value": "600000000"
+        }
+      ]
+    },
+    {
+      "group": "硬解码",
+      "options": [
+        {
+          "category": 4,
+          "name": "opensles",
+          "value": "0"
+        },
+        {
+          "category": 4,
+          "name": "overlay-format",
+          "value": "842225234"
+        },
+        {
+          "category": 4,
+          "name": "framedrop",
+          "value": "1"
+        },
+        {
+          "category": 4,
+          "name": "soundtouch",
+          "value": "1"
+        },
+        {
+          "category": 4,
+          "name": "start-on-prepared",
+          "value": "1"
+        },
+        {
+          "category": 1,
+          "name": "http-detect-range-support",
+          "value": "0"
+        },
+        {
+          "category": 1,
+          "name": "fflags",
+          "value": "fastseek"
+        },
+        {
+          "category": 2,
+          "name": "skip_loop_filter",
+          "value": "48"
+        },
+        {
+          "category": 4,
+          "name": "reconnect",
+          "value": "1"
+        },
+        {
+          "category": 4,
+          "name": "enable-accurate-seek",
+          "value": "0"
+        },
+        {
+          "category": 4,
+          "name": "mediacodec",
+          "value": "1"
+        },
+        {
+          "category": 4,
+          "name": "mediacodec-auto-rotate",
+          "value": "1"
+        },
+        {
+          "category": 4,
+          "name": "mediacodec-handle-resolution-change",
+          "value": "1"
+        },
+        {
+          "category": 4,
+          "name": "mediacodec-hevc",
+          "value": "1"
+        },
+        {
+          "category": 1,
+          "name": "dns_cache_timeout",
+          "value": "600000000"
+        }
+      ]
+    }
+  ],
+  "ads": [
+    "mimg.0c1q0l.cn",
+    "www.googletagmanager.com",
+    "www.google-analytics.com",
+    "mc.usihnbcq.cn",
+    "mg.g1mm3d.cn",
+    "mscs.svaeuzh.cn",
+    "cnzz.mmstat.com",
+    "tp.vinuxhome.com",
+    "cnzz.imgs.com",
+    "z1.cnzz.com",
+    "s13.cnzz.com",
+    "v1.cnzz.com"
+  ]
+}
