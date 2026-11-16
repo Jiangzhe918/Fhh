@@ -1,0 +1,53 @@
+name: Auto Update TVBox Sources
+
+on:
+  schedule:
+    # 每天北京时间凌晨 04:00 和下午 16:00 (UTC 20:00 和 08:00) 各自动巡检一次
+    - cron: '0 8,20 * * *'
+  workflow_dispatch: # 支持在 GitHub 页面手动点击 Run workflow 立即触发
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-sources
+  cancel-in-progress: false
+
+jobs:
+  update-sources:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: 1. 检出仓库代码
+        uses: actions/checkout@v4
+
+      - name: 2. 配置 Python 运行环境
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 3. 安装依赖库
+        run: pip install requests urllib3
+
+      - name: 4. 执行 15 站点播、短剧专区与电视直播源 (lives) 自动探活合并
+        # 同时生成 tvbox_config.json (相对路径自适应版)、tvbox_mirror.json (国内镜像绝对路径版) 与 live_tv.txt (直播快照)
+        run: python auto_update_sources.py
+
+      - name: 5. 校验配置文件与爬虫脚本合法性
+        run: |
+          python -m json.tool tvbox_config.json > /dev/null
+          python -m json.tool tvbox_mirror.json > /dev/null
+          python -m py_compile py_cms_spider.py py_douban.py auto_update_sources.py
+          test -s live_tv.txt
+
+      - name: 6. 自动提交并推送变更到仓库
+        run: |
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Actions Bot"
+          git add tvbox_config.json tvbox_mirror.json live_tv.txt py_cms_spider.py py_douban.py
+          if git diff --staged --quiet; then
+            echo "所有点播站点、短剧源与直播源均无变化，无需提交。"
+          else
+            git commit -m "chore: 自动更新15站采集域名、短剧专区与电视直播源快照 [skip ci]"
+            git push
+          fi
