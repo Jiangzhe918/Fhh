@@ -48,11 +48,11 @@ class Spider(BaseSpider):
         },
         "ffzy": {
             "name": "🎞️非凡资源",
-            "api": "http://cj.ffzyapi.com/api.php/provide/vod/"
+            "api": "http://ffzy5.tv/api.php/provide/vod/"
         },
         "suoni": {
             "name": "🎧索尼资源",
-            "api": "https://suoniapi.com/api.php/provide/vod/"
+            "api": "http://suoniapi.com/api.php/provide/vod/"
         },
         "jisu": {
             "name": "🚀极速资源",
@@ -60,11 +60,11 @@ class Spider(BaseSpider):
         },
         "bfzy": {
             "name": "🌪️暴风资源",
-            "api": "https://bfzyapi.com/api.php/provide/vod/"
+            "api": "http://bfzyapi.com/api.php/provide/vod/"
         },
         "ikun": {
             "name": "🏀iKun资源",
-            "api": "https://ikunzyapi.com/api.php/provide/vod/"
+            "api": "http://ikunzyapi.com/api.php/provide/vod/"
         },
         "wolong": {
             "name": "🐉卧龙资源",
@@ -80,11 +80,11 @@ class Spider(BaseSpider):
         },
         "hongniu": {
             "name": "🐂红牛资源",
-            "api": "https://hongniuzy2.com/api.php/provide/vod/"
+            "api": "https://www.hongniuzy2.com/api.php/provide/vod/"
         },
         "wujin": {
             "name": "♾️无尽资源",
-            "api": "https://api.wujinapi.com/api.php/provide/vod/"
+            "api": "https://api.wujinapi.me/api.php/provide/vod/"
         },
         "haohua": {
             "name": "💎豪华资源",
@@ -92,7 +92,7 @@ class Spider(BaseSpider):
         },
         "baidu": {
             "name": "🐾百度资源",
-            "api": "https://api.apibdzy.com/api.php/provide/vod/"
+            "api": "http://api.apibdzy.com/api.php/provide/vod/"
         },
         "360zy": {
             "name": "🛡️360资源",
