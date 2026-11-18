@@ -60,7 +60,7 @@ class Spider(BaseSpider):
         },
         "bfzy": {
             "name": "🌪️暴风资源",
-            "api": "https://bfzyapi.com/api.php/provide/vod/"
+            "api": "https://app.bfzyapi.com/api.php/provide/vod/"
         },
         "ikun": {
             "name": "🏀iKun资源",

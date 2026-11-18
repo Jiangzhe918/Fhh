@@ -11,18 +11,9 @@
       "logo": "https://epg.112114.xyz/logo/{name}.png"
     },
     {
-      "name": "📺 范明明 IPv6/v4 高清直播",
+      "name": "⚡ Guovin 自动测速电视直播",
       "type": 0,
-      "url": "https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/m3u/ipv6.m3u",
-      "playerType": 1,
-      "ua": "okhttp/3.15",
-      "epg": "https://epg.112114.xyz/?ch={name}&date={date}",
-      "logo": "https://epg.112114.xyz/logo/{name}.png"
-    },
-    {
-      "name": "📡 vbskycn 央卫全聚合直播",
-      "type": 0,
-      "url": "https://gh-proxy.com/https://raw.githubusercontent.com/vbskycn/iptv/master/tv/iptv4.txt",
+      "url": "https://gh-proxy.com/https://raw.githubusercontent.com/Guovin/iptv-api/gd/output/result.txt",
       "playerType": 1,
       "ua": "okhttp/3.15",
       "epg": "https://epg.112114.xyz/?ch={name}&date={date}",
@@ -38,9 +29,18 @@
       "logo": "https://epg.112114.xyz/logo/{name}.png"
     },
     {
-      "name": "⚡ Guovin 自动测速电视直播",
+      "name": "📺 范明明 IPv6/v4 高清直播",
       "type": 0,
-      "url": "https://gh-proxy.com/https://raw.githubusercontent.com/Guovin/iptv-api/gd/output/result.txt",
+      "url": "https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/m3u/ipv6.m3u",
+      "playerType": 1,
+      "ua": "okhttp/3.15",
+      "epg": "https://epg.112114.xyz/?ch={name}&date={date}",
+      "logo": "https://epg.112114.xyz/logo/{name}.png"
+    },
+    {
+      "name": "📡 vbskycn 央卫全聚合直播",
+      "type": 0,
+      "url": "https://gh-proxy.com/https://raw.githubusercontent.com/vbskycn/iptv/master/tv/iptv4.txt",
       "playerType": 1,
       "ua": "okhttp/3.15",
       "epg": "https://epg.112114.xyz/?ch={name}&date={date}",
@@ -84,7 +84,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "ext": "{\"default_site\":\"ffzy\",\"mode\":\"duanju\",\"remove_ad\":true,\"aggregate_detail\":true,\"use_local_proxy\":true}"
+      "ext": "{\"default_site\":\"suoni\",\"mode\":\"duanju\",\"remove_ad\":true,\"aggregate_detail\":true,\"use_local_proxy\":true}"
     },
     {
       "key": "py_cms_pro",
@@ -94,7 +94,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "ext": "{\"default_site\":\"ffzy\",\"mode\":\"all\",\"remove_ad\":true,\"aggregate_detail\":true,\"use_local_proxy\":true}"
+      "ext": "{\"default_site\":\"suoni\",\"mode\":\"all\",\"remove_ad\":true,\"aggregate_detail\":true,\"use_local_proxy\":true}"
     },
     {
       "key": "py_ffzy_pro",
@@ -107,28 +107,10 @@
       "ext": "{\"default_site\":\"ffzy\",\"mode\":\"all\",\"remove_ad\":true,\"aggregate_detail\":true,\"use_local_proxy\":true}"
     },
     {
-      "key": "ffzy_cms",
-      "name": "🎞️ 非凡资源 (老牌综合/豆瓣高分)",
-      "type": 1,
-      "api": "http://ffzy1.tv/api.php/provide/vod/",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1
-    },
-    {
       "key": "suoni_cms",
       "name": "🎧 索尼资源 (短剧王牌/综合/动漫)",
       "type": 1,
       "api": "http://suoniapi.com/api.php/provide/vod/",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1
-    },
-    {
-      "key": "hongniu_cms",
-      "name": "🐂 红牛资源 (极速同步/体育录像)",
-      "type": 1,
-      "api": "https://www.hongniuzy2.com/api.php/provide/vod/",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1
@@ -152,28 +134,10 @@
       "filterable": 1
     },
     {
-      "key": "haohua_cms",
-      "name": "💎 豪华资源 (多线容灾/短剧高更)",
+      "key": "hongniu_cms",
+      "name": "🐂 红牛资源 (极速同步/体育录像)",
       "type": 1,
-      "api": "https://hhzyapi.com/api.php/provide/vod/",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1
-    },
-    {
-      "key": "bfzy_cms",
-      "name": "🌪️ 暴风资源 (爽文短剧/4K综合)",
-      "type": 1,
-      "api": "https://bfzyapi.com/api.php/provide/vod/",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1
-    },
-    {
-      "key": "ikun_cms",
-      "name": "🏀 iKun资源 (短剧热播/极速切片)",
-      "type": 1,
-      "api": "http://ikunzyapi.com/api.php/provide/vod/",
+      "api": "https://www.hongniuzy2.com/api.php/provide/vod/",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1
@@ -188,10 +152,46 @@
       "filterable": 1
     },
     {
+      "key": "ikun_cms",
+      "name": "🏀 iKun资源 (短剧热播/极速切片)",
+      "type": 1,
+      "api": "http://ikunzyapi.com/api.php/provide/vod/",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
+      "key": "haohua_cms",
+      "name": "💎 豪华资源 (多线容灾/短剧高更)",
+      "type": 1,
+      "api": "https://hhzyapi.com/api.php/provide/vod/",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
+      "key": "ffzy_cms",
+      "name": "🎞️ 非凡资源 (老牌综合/豆瓣高分)",
+      "type": 1,
+      "api": "http://ffzy1.tv/api.php/provide/vod/",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
       "key": "baidu_cms",
       "name": "🐾 百度资源 (多线容灾/备用源)",
       "type": 1,
       "api": "http://api.apibdzy.com/api.php/provide/vod/",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
+      "key": "bfzy_cms",
+      "name": "🌪️ 暴风资源 (爽文短剧/4K综合)",
+      "type": 1,
+      "api": "https://app.bfzyapi.com/api.php/provide/vod/",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1
