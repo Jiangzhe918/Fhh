@@ -44,7 +44,7 @@ class Spider(BaseSpider):
     CMS_SITES = {
         "lzi": {
             "name": "🎬量子资源",
-            "api": "http://cj.lziapi.com/api.php/provide/vod/"
+            "api": "https://cj.lziapi.com/api.php/provide/vod/"
         },
         "ffzy": {
             "name": "🎞️非凡资源",
@@ -64,7 +64,7 @@ class Spider(BaseSpider):
         },
         "ikun": {
             "name": "🏀iKun资源",
-            "api": "https://ikunzyapi.com/api.php/provide/vod/"
+            "api": "http://ikunzyapi.com/api.php/provide/vod/"
         },
         "wolong": {
             "name": "🐉卧龙资源",
@@ -80,11 +80,11 @@ class Spider(BaseSpider):
         },
         "hongniu": {
             "name": "🐂红牛资源",
-            "api": "https://hongniuzy2.com/api.php/provide/vod/"
+            "api": "https://www.hongniuzy3.com/api.php/provide/vod/"
         },
         "wujin": {
             "name": "♾️无尽资源",
-            "api": "https://api.wujinapi.me/api.php/provide/vod/"
+            "api": "https://api.wujinapi.net/api.php/provide/vod/"
         },
         "haohua": {
             "name": "💎豪华资源",
