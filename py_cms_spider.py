@@ -50,12 +50,12 @@ class Spider(BaseSpider):
     SITES = {
         "lzi": {
             "name": "🎬量子资源",
-            "api": "https://cj.lziapi.com/api.php/provide/vod/",
+            "api": "http://cj.lziapi.com/api.php/provide/vod/",
             "flag_keys": ["lzm3u8", "lzi"]
         },
         "ffzy": {
             "name": "🎞️非凡资源",
-            "api": "http://ffzy5.tv/api.php/provide/vod/",
+            "api": "http://ffzy1.tv/api.php/provide/vod/",
             "flag_keys": ["ffm3u8", "ffzy"]
         },
         "suoni": {
@@ -70,7 +70,7 @@ class Spider(BaseSpider):
         },
         "bfzy": {
             "name": "🌪️暴风资源",
-            "api": "http://bfzyapi.com/api.php/provide/vod/",
+            "api": "https://bfzyapi.com/api.php/provide/vod/",
             "flag_keys": ["bfzym3u8", "bfzy"]
         },
         "ikun": {
@@ -95,12 +95,12 @@ class Spider(BaseSpider):
         },
         "hongniu": {
             "name": "🐂红牛资源",
-            "api": "https://www.hongniuzy3.com/api.php/provide/vod/",
+            "api": "https://hongniuzy2.com/api.php/provide/vod/",
             "flag_keys": ["hnm3u8", "hongniu"]
         },
         "wujin": {
             "name": "♾️无尽资源",
-            "api": "https://api.wujinapi.net/api.php/provide/vod/",
+            "api": "https://api.wujinapi.me/api.php/provide/vod/",
             "flag_keys": ["wjm3u8", "wujin"]
         },
         "haohua": {
@@ -115,7 +115,7 @@ class Spider(BaseSpider):
         },
         "360zy": {
             "name": "🛡️360资源",
-            "api": "https://360zy.com/api.php/provide/vod/",
+            "api": "https://360zy5.com/api.php/provide/vod/",
             "flag_keys": ["360m3u8", "360zy"]
         },
         "haiwaikan": {
